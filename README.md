@@ -36,10 +36,11 @@ service: opencv-layer
 
 provider:
   name: aws
-  runtime: python3.7
 layers:
   opencv37:
     path: layer
+    compatibleRuntimes:
+        - python3.7  # List any runtimes to specify here
 
 resources:
   Outputs:
