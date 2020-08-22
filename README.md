@@ -39,6 +39,7 @@ provider:
 layers:
   opencv37:
     path: layer
+    artifact: cv2-python37.zip  # If it's already zipped, Serverless needs to know
     compatibleRuntimes:
         - python3.7  # List any runtimes to specify here
 
